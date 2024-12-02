@@ -38,7 +38,7 @@ menu:
       pageRef: /about
       weight: 3
     - name: Contact ↗
-      url: "https://github.com/Saiqoo"
+      url: "https://github.com/saiqo"
       weight: 4
     - name: Search
       weight: 5
@@ -46,7 +46,7 @@ menu:
         type: search
     - name: GitHub
       weight: 6
-      url: "https://github.com/Saiqoo"
+      url: "https://github.com/saiqo"
       params:
         icon: github
 
@@ -89,7 +89,7 @@ params:
 
     flexsearch:
       # index page by: content | summary | heading | title
-      index: content
+      index: title
       # full | forward | reverse | strict
       # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
       tokenize: forward
