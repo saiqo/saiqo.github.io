@@ -216,5 +216,8 @@ git commit -m "Publication du site"
 git push origin main:main
 ```
 
-Le workflow Github va se lancer automatiquement et va publier notre site. Cela va durer quelques secondes/minutes, une fois terminé le site est sera accessible.
+Le workflow Github va se lancer automatiquement après avoir commit & push, puis va publier notre site. Cela va durer quelques secondes/minutes, une fois terminé le site est sera accessible.
 
+Et voilà, notre site est prêt et accessible !
+
+>_Pour plus de détails sur la configuration du thème, se référer à la documentation : https://imfing.github.io/hextra/docs/guide/_
