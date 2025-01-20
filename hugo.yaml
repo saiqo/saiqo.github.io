@@ -27,7 +27,8 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - identifier: docs
+      name: Docs
       pageRef: /docs
       weight: 1
     - identifier: blog
@@ -95,7 +96,7 @@ params:
       tokenize: forward
 
   editURL:
-    enable: true
+    enable: false
     base: "https://github.com/saiqo/saiqo.github.io/edit/main/content"
 
   blog:

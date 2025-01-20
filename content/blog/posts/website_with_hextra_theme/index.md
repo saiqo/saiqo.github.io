@@ -25,7 +25,8 @@ Création d'un site web avec Hugo et déploiement automatique sur Github Pages e
 Créer un repo github :
 ![](create_repo.png)
 
-Le nom du repo doit obligatoirement être de la forme : `<pseudo_github>.github.io`
+> [!IMPORTANT]
+> Si vous ne possédez pas de domaine personalisé, le nom du repo doit obligatoirement être de la forme : `<pseudo_github>.github.io` 
 
 
 ### _Optionnel - Custom DNS_
