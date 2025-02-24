@@ -1,6 +1,7 @@
 ---
 title: Installation de Micro Core Linux
 date: 2025-02-20
+description: Guide pour installer Micro Core, une version ultra légère de linux
 authors:
   - name: Saiqo
     link: https://github.com/saiqo
@@ -24,7 +25,7 @@ Nous allons voir dans ce tutoriel, comment le rendre persistant.
 <!--Content-->
 
 ## Environnement
-Pour des questions de simplicité, l'installation sera faite sous la forme d'une machine virtuelle avec Vmware Workstation 17, mais il est tout à fait possible de se servir de ce tutoriel pour l'installer directement sur une machine.
+Pour des questions de simplicité, l'installation sera faite sur une machine virtuelle avec Vmware Workstation 17, mais il est tout à fait possible de se servir de ce tutoriel pour l'installer directement sur une machine.
 
 ## Installation minimale
 
