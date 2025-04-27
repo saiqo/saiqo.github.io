@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# Bienvenue sur le site web de Saiqo
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+---
 
-## Commands
+## Explore
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Découvrez les principales sections du site :
 
-## Project layout
+<div class="grid cards" markdown>
+    
+-   📝 **Documentation**  
+    Documentations techniques et autres 
+    [Voir les documentations](docs/index.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+-   📰 **Blog**  
+    Mes derniers articles postés.
+    [Voir les articles](blog/index.md)
+
+-   👤 **À propos**  
+    Pour en savoir plus  
+    [About me](about.md)
+
+</div>
+

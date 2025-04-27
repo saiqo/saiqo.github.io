@@ -4,14 +4,17 @@ copyright: Copyright &copy; 2024 - 2025 Saiqo
 
 theme:
   name: material
-  palette: 
-    - scheme: default
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: orange
       accent: amber
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    - scheme: slate
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: orange
       accent: amber
       toggle:
@@ -30,12 +33,19 @@ theme:
     - navigation.tabs.sticky
     - navigation.path # Only for insiders
     - navigation.top
-    
+
+
 plugins:
   - search:
       lang: fr
   - blog
   - tags
+
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
 
 # extra_css:
 #   - stylesheets/custom.css
