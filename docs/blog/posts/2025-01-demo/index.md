@@ -1,7 +1,5 @@
 ---
-date:
-  created: 2024-01-31
-  updated: 2024-02-02
+date: 2024-01-31
 cover_image: images/thumbnail.png
 links:
   - docs/index.md
