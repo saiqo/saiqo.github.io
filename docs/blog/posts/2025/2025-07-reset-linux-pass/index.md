@@ -26,7 +26,7 @@ Dans cet article, nous allons voir 2 méthodes pour réinitialiser un mot de pas
     Cette méthode fonctionne sur un Linux utilisant `systemd` ou `OpenRC`. De plus, si votre disque dur est chiffré, ou que GRUB est protégé par un mot de passe, il vous faudra d'abord le déchiffrer et/ou déverrouiller GRUB.
 
 ## Méthode 1 : Réinitialiser le mot de passe en utilisant GRUB
-###  1) Accès à un shell
+###  1. Accès à un shell
 Dans un premier temps, nous allons éditer les paramètres de démarrage de GRUB pour pouvoir accéder à un shell sur la machine.
 
 Lorsque vous démarrez votre machine, vous devriez voir l'écran de GRUB. 
@@ -56,7 +56,7 @@ Vous devriez maintenant être dans un shell ressemblant à ceci :
 root@(none):/# 
 ```
 
-### 2) Remonter le système de fichiers en écriture
+### 2. Remonter le système de fichiers en écriture
 Par défaut, le système de fichiers est monté en lecture seule. Pour pouvoir modifier le mot de passe, nous devons le remonter en écriture. Exécutez la commande suivante :
 
 ``` bash
@@ -75,7 +75,7 @@ Vous devriez voir une ligne similaire à celle-ci :
 /dev/sda1 on / type ext4 (rw,relatime)
 ```
 
-### 3) Réinitialiser le mot de passe
+### 3. Réinitialiser le mot de passe
 Maintenant que le système de fichiers est monté en écriture, vous pouvez réinitialiser le mot de passe de n'importe quel utilisateur (également root). Par exemple, pour réinitialiser le mot de passe de l'utilisateur `user`, exécutez :
 
 ``` bash
@@ -92,7 +92,7 @@ $ exec /sbin/init
 
 Pour le bon fonctionnement de cette méthode, il vous faudra une clé usb avec un Live CD/USB pour pouvoir démarrer dessus et modifier la partition de votre système.
 
-### 1) Identifier et monter la partition racine
+### 1. Identifier et monter la partition racine
 Une fois que vous avez démarré sur votre Live CD/USB, ouvrez un terminal et listez les partitions avec :
 
 ```bash
@@ -115,21 +115,21 @@ $ ls /mnt/mapartition
 
 Vous devriez voir les fichiers de votre système, comme `etc`, `home`, etc.
 
-### 2) Chroot
+### 2. Chroot
 Pour accéder à votre système comme si vous étiez dessus, entrez dans un chroot sur la partition montée :
 
 ```bash
 $ chroot /mnt/mapartition
 ```
 
-### 3) Réinitialisation le mot de passe
+### 3. Réinitialisation le mot de passe
 Dans le chroot, réinitialisez le mot de passe de l’utilisateur souhaité (par exemple `user` ou un autre utilisateur) :
 
 ```bash
 $ passwd user
 ```
 
-### 4) Démonter la partition et redémarrer
+### 4. Démonter la partition et redémarrer
 Sortez du chroot et démontez la partition :
 
 ```bash
