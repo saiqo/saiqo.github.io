@@ -40,6 +40,9 @@ Dans l’interface Proxmox, ouvrez la configuration de votre VM, puis ajoutez un
 
 ### 2. Modifier la configuration de GRUB
 
+!!! Note "Info"
+    Si votre VM utilise une image cloud-init, vous n'avez pas besoin de modifier la configuration de GRUB, car le port série est déjà configuré par défaut. Vous pouvez vérifier que la configuration est bien présente dans le fichier `/etc/default/grub` si besoin.
+
 Éditez le fichier `/etc/default/grub` en tant que root :
 
 ```bash
